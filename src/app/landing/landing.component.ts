@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
-
+//Service
+import { DataService } from '../data.service';
 
 @Component({
 	selector: 'app-landing',
@@ -41,15 +42,18 @@ export class LandingComponent implements OnInit {
 	itemCount: number = 4;
 	btnText: string = 'Add an Item';
 	goalText: string = 'ohno';
-	goals = ['my first life goal', 'i want to make people happy', 'get a girlfriend'];
-	constructor() { }
+	goals = [];
+	constructor(private _data: DataService) { }
 
 	// Fires when component is loaded
 	ngOnInit() {
 		this.itemCount = this.goals.length;
+		this._data.goal.subscribe(res => this.goals = res);
+		this._data.changeGoal(this.goals);
 	}
 	removeItem(i){
 		this.goals.splice(i,1)
+		this._data.changeGoal(this.goals);
 	}
 	addItem(){
 		// on click, push goalText into goals array
@@ -58,6 +62,7 @@ export class LandingComponent implements OnInit {
 		this.goalText = '';
 		// set itemCount to length of goals array
 		this.itemCount = this.goals.length;
+		this._data.changeGoal(this.goals);
 	}
 
 }

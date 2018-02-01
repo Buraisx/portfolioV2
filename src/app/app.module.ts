@@ -11,8 +11,14 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from './../environments/environment';
 //App components
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
+import { DataService } from './data.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ProjectsComponent } from './projects/projects.component';
+
+
 
 // Routes variable
 const routes: Routes = [
@@ -30,7 +36,9 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     LandingComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,7 @@ const routes: Routes = [
     	routes
     )
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
