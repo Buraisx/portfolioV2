@@ -1,5 +1,9 @@
 h1{
 	display:inline;
+	font-family:'Quicksand';
+	a{
+		text-decoration:none;
+	}
 }
 mat-toolbar{
 	position: fixed;
@@ -15,8 +19,7 @@ mat-toolbar{
 	list-style: none;
 	li a{
 		font-family: 'Quicksand';
-		color:black;
-		margin:1em;
+		margin:0.5em;
 		text-decoration: none;
 		font-weight:bold;
 	}

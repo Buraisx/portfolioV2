@@ -1,0 +1,26 @@
+mat-grid-list{
+	width:60%;
+	margin:auto;
+
+	@media(max-width: 967px){
+		width:70%;
+	}
+	@media(max-width:667px){
+		width:90%;
+	}
+}
+mat-grid-tile{
+	border: 1px solid #6d6d65;
+}
+#bakingImage{
+	background: #F8F9FA url("../../assets/images/mary-j-logo.png") no-repeat center;
+}
+#biteImage{
+	background: #254073 url("../../assets/images/bitelist-02-transparent2.png") no-repeat center;
+}
+#gibsonImage{
+	background: #F4B560 url("../../assets/images/gibsonlogo.png") no-repeat center;
+}
+#dotstarImage{
+	background: #E8E7E7 url("../../assets/images/dotstar.png") no-repeat center;
+}

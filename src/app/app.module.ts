@@ -5,8 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material 2
-import {MatButtonModule, MatToolbarModule} from '@angular/material';
-
+import {MatButtonModule, MatToolbarModule, MatGridListModule} from '@angular/material';
 // Firebase 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -56,6 +55,7 @@ const routes: Routes = [
     AngularFireAuthModule,
     MatButtonModule, 
     MatToolbarModule,
+    MatGridListModule,
     RouterModule.forRoot(
     	routes
     )

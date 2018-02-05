@@ -1,5 +1,6 @@
-
-<div *ngFor="let project of projectsObservable | async">
-	<p>{{project.link}}</p>
-</div>
-
+<mat-grid-list cols="2" gutterSize="1rem" rowHeight="2:1">
+	<mat-grid-tile id={{project.imageClass}} *ngFor="let project of projectsObservable | async"
+	[colspan]="project.cols"
+	[rowspan]="project.rows" >
+	</mat-grid-tile>
+</mat-grid-list>

@@ -20,4 +20,5 @@ export class ProjectsComponent implements OnInit {
 		return this.db.list(listPath).valueChanges();
 	}
 
+
 }
