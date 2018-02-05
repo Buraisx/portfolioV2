@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material 2
-import {MatButtonModule, MatToolbarModule, MatGridListModule,MatIconModule} from '@angular/material';
+import {MatButtonModule, MatToolbarModule, MatGridListModule,MatIconModule,MatCardModule} from '@angular/material';
 // Firebase 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -19,6 +19,7 @@ import { AboutComponent } from './about/about.component';
 import { DataService } from './data.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -44,7 +45,8 @@ const routes: Routes = [
     LandingComponent,
     AboutComponent,
     NavbarComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +59,7 @@ const routes: Routes = [
     MatToolbarModule,
     MatGridListModule,
     MatIconModule,
+    MatCardModule,
     RouterModule.forRoot(
     	routes
     )

@@ -2,8 +2,33 @@
 	text-align:center;
 	width: 70%;
 	margin:auto;
+	@media(min-width:1040px){
+		width:50%;
+	}
 }
 p{
 	font-family: Roboto, Quicksand;
 	line-height: 2em;
+
+}
+.info{
+		position:absolute;
+		top:0;
+		h3{
+			font-weight:bold;
+		}
+}
+#responsive, #browser,#edit{
+	border-radius:50%;
+	border:1px solid black;
+}
+img{
+	width: 50%;
+	height: auto;
+}
+.abilityTitle{
+	display:block;
+	position:relative;
+	margin-top:3em;
+	margin-bottom:2em;
 }

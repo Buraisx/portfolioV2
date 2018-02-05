@@ -2,6 +2,9 @@ mat-grid-list{
 	width:60%;
 	margin:auto;
 	z-index:-2;
+	@media(min-width:1040px){
+		width:50%
+	}
 	@media(max-width: 967px){
 		width:70%;
 	}

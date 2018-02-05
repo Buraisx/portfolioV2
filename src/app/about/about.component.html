@@ -3,14 +3,20 @@
 <p>&emsp;I’m William Situ, and I build websites for others. Nothing makes me more happy than being able to see peoples smiles from my own efforts.  Whether it’s cooking or coding,  i’ll do what I can to help you, and If you have expectations, I’ll surely meet them!</p>
 <p>&emsp;My Journey started two years ago when I started creating websites with my friends pro bono.  What spawned was our startup called Dotstar.  After a few months of developing, we went our seperate ways again, but I really enjoyed that time together, so I went looking for a dev job.  I figured i didnt have the appropriate experience and knowledge, so I went to pursue a career as a technician.  However, I did not enjoy doing it at all, so I decided to open up a new chapter in my life from Bitmaker.</p>
 <p>&emsp;My time at Bitmaker taught me so many things, ranging from Full Stack Web Development to UX design.  It’s not just from teachers, but also the students that helped each other elevate and grow.</p>
-</div>
 
-<mat-grid-list cols="3">
-	<mat-grid-tile [colspan]="3">
-		<span>What I can do</span>
-	</mat-grid-tile>
+<div class="abilityTitle"><span>What I can do</span></div>
+<mat-grid-list cols="3" gutterSize="1.5em">
+	
 	<mat-grid-tile *ngFor="let icon of abilities"
-		[colspan]="1">
+		[colspan]="1" id={{icon}}>
 		<img src="../../assets/images/{{icon}}.svg">
 	</mat-grid-tile>
+	<mat-grid-tile *ngFor="let description of descriptions"
+		[colspan]="1" [rowspan]="2">
+		<div class="info">
+			<h3>{{description.title}}</h3>
+		<p>{{description.text}}</p>
+		</div>
+	</mat-grid-tile>
 </mat-grid-list>
+</div>
