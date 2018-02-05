@@ -1,7 +1,7 @@
 mat-grid-list{
 	width:60%;
 	margin:auto;
-
+	z-index:-2;
 	@media(max-width: 967px){
 		width:70%;
 	}
@@ -9,7 +9,8 @@ mat-grid-list{
 		width:90%;
 	}
 }
-mat-grid-tile{
+
+.projects{
 	border: 1px solid #6d6d65;
 }
 #bakingImage{
@@ -24,3 +25,8 @@ mat-grid-tile{
 #dotstarImage{
 	background: #E8E7E7 url("../../assets/images/dotstar.png") no-repeat center;
 }
+img{
+	width:100%;
+	height:100%;
+}
+	

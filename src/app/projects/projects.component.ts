@@ -9,7 +9,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ProjectsComponent implements OnInit {
 	projectsObservable: Observable<any[]>;
-
+	stack = ['rails','react','angular','node','bootstrap','postgres'];
   	constructor(private db: AngularFireDatabase) { }
 
 	ngOnInit() {
