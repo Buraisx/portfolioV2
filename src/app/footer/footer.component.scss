@@ -6,10 +6,16 @@
 		border:none;
 	}
 	div{
-		margin: 0 1em;
+		margin: 1em 1em;
 		text-align:center;
+	
 		img{
+			transition: all .3s ease-in-out;
 			margin: 0 0.5em;
+			width:3em;
+			&:hover{
+				filter: opacity(40%);
+			}
 		}
 	}
 	#email{

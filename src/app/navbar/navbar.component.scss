@@ -1,9 +1,14 @@
 h1{
 	display:inline;
 	font-family:'Quicksand';
+	transition: all .1s ease-in-out;
 	a{
 		text-decoration:none;
+
 	}
+	&:hover{
+			transform:scale(1.1);
+		}
 }
 mat-toolbar{
 	position: fixed;
@@ -20,8 +25,17 @@ mat-toolbar{
 	li a{
 		font-size:1.25em;
 		font-family: 'Quicksand';
-		margin:0.5em;
+		
 		text-decoration: none;
 		font-weight:bold;
+		padding:1em;
+		transition: all 0.3s ease-in-out;
+		border-radius:5px;
+		&:hover{
+		    -webkit-box-shadow: -2px 4px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: -2px 4px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: -2px 4px 5px 0px rgba(0,0,0,0.75);
+
+		}
 	}
 }
