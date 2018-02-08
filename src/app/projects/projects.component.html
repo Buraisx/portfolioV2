@@ -1,18 +1,16 @@
 
-	<mat-grid-list cols="{{columns}}" gutterSize="1rem" rowHeight="2:1" id="projects_list">
-		<a href = "/">
+	<mat-grid-list cols="{{columns}}" gutterSize="1rem" rowHeight="2:1" id="projects_list">	
 		<mat-grid-tile id={{project.imageClass}} class="projects" *ngFor="let project of projectsObservable | async"
 		[colspan]="project.cols"
 		[rowspan]="project.rows">
-			<div class="projectInfo">
-				{{project.name}}
-				{{project.link}}
-			</div>
+			<a class="projectInfo" href={{project.link}} target="_blank">
+				<p>{{project.description}}</p>
+				<p>Stack: {{project.stack}}</p>
+			</a>
 		</mat-grid-tile>
-	</a>
 	</mat-grid-list>
 
-<mat-grid-list cols="6">
+<mat-grid-list cols="6" id="stack">
 	<mat-grid-tile [colspan]="6">
 		<span>I build with</span>
 	</mat-grid-tile>

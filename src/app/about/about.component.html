@@ -12,10 +12,10 @@
 		<img src="../../assets/images/{{icon}}.svg">
 	</mat-grid-tile>
 	<mat-grid-tile *ngFor="let description of descriptions"
-		[colspan]="1" [rowspan]="2">
+		[colspan]="1" [rowspan]="2" class="abilityInfo">
 		<div class="info">
 			<h3>{{description.title}}</h3>
-		<p>{{description.text}}</p>
+			<p>{{description.text}}</p>
 		</div>
 	</mat-grid-tile>
 </mat-grid-list>
