@@ -21,6 +21,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 //Extra modules
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ContactModalComponent } from './contact-modal/contact-modal.component';
 
 
 
@@ -47,7 +48,8 @@ const routes: Routes = [
     AboutComponent,
     NavbarComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    ContactModalComponent
   ],
   imports: [
     BrowserModule,
