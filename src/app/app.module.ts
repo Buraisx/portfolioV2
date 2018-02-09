@@ -17,8 +17,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
-import { DataService } from './data.service';
-import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 //Extra modules
@@ -72,7 +70,6 @@ const routes: Routes = [
     MatButtonModule, 
     MatToolbarModule
   ],
-  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
