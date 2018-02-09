@@ -1,7 +1,6 @@
 mat-grid-list{
 	width:60%;
 	margin:auto;
-	cursor:pointer;
 	@media(min-width:1040px){
 		width:50%
 	}
@@ -27,15 +26,22 @@ mat-grid-list{
 		padding-bottom: 100vh !important;
 	}
 	@media(max-width:667px){
-		padding-bottom: 50vh !important;
+		padding-bottom: 70vh !important;
 	}
 	@media(max-width:567px){
-		padding-bottom: 45vh !important;
+		padding-bottom: 67vh !important;
+	}
+	@media(max-width:500px){
+		padding-bottom: 50vh !important;
 	}
 }
 
 #stack{
-	@media(max-width:666px)
+	@media(max-width:664px)
+	{
+		padding-bottom: 30vh !important;
+	}
+	@media(max-width:470px)
 	{
 		padding-bottom: 20vh !important;
 	}

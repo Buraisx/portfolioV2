@@ -20,6 +20,8 @@ import { DataService } from './data.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+//Extra modules
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 
@@ -60,6 +62,7 @@ const routes: Routes = [
     MatGridListModule,
     MatIconModule,
     MatCardModule,
+    ScrollToModule.forRoot(),
     RouterModule.forRoot(
     	routes
     )

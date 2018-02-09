@@ -1,15 +1,36 @@
-
-	<mat-grid-list cols="{{columns}}" gutterSize="1rem" rowHeight="2:1" id="projects_list">	
-		<mat-grid-tile id={{project.imageClass}} class="projects" *ngFor="let project of projectsObservable | async"
-		[colspan]="project.cols"
-		[rowspan]="project.rows">
+<div *ngIf="columns === 2"  id="projects">
+	<mat-grid-list cols="{{columns}}" gutterSize="1rem" rowHeight="2:1" id="projects_list" (window:resize)="onResize($event)" >
+		<!--  if block-->
+		
+			<mat-grid-tile id={{project.imageClass}} class="projects" *ngFor="let project of projectsObservable | async"
+			[colspan]="project.cols"
+			[rowspan]="project.rows">
 			<a class="projectInfo" href={{project.link}} target="_blank">
-				<p>{{project.description}}</p>
-				<p>Stack: {{project.stack}}</p>
-			</a>
+					<p>{{project.description}}</p>
+					<p>Stack: {{project.stack}}</p>
+				</a>
+			</mat-grid-tile>
+		</mat-grid-list>
+
+</div>
+
+<!-- Elseblock -->
+<div *ngIf="columns !== 2" >
+	<mat-grid-list cols="{{columns}}" gutterSize="1rem" rowHeight="4:1" id="projects_list" (window:resize)="onResize($event)" >
+			<mat-grid-tile id={{project.imageClass}} class="projects" *ngFor="let project of projectsObservable | async"
+			[rowspan]="1" rowheight="100px">
+				<a class="projectInfo" href={{project.link}} target="_blank">
+					<p>{{project.description}}</p>
+					<p>Stack: {{project.stack}}</p>
+				</a>
 		</mat-grid-tile>
 	</mat-grid-list>
+</div>
 
+
+
+
+<!-- STACK OF IMAGES -->
 <mat-grid-list cols="6" id="stack">
 	<mat-grid-tile [colspan]="6">
 		<span>I build with</span>
