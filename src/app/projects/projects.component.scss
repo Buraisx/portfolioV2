@@ -34,9 +34,28 @@ mat-grid-list{
 	@media(max-width:500px){
 		padding-bottom: 50vh !important;
 	}
+	//this was where I realized i shouldve been using margin...
+	@media(max-height:568px){
+		margin-bottom: 30vh !important;
+	}
+	@media(max-height:667px){
+		margin-bottom: 20vh !important;
+	}
+	@media(max-height:768px){
+		margin-bottom: 15vh !important;
+	}
+
 }
 
 #stack{
+	@media(max-width:1680px)
+	{
+		padding-bottom: 40vh !important;
+	}
+	@media(max-width:1440px)
+	{
+		padding-bottom: 40vh !important;
+	}
 	@media(max-width:664px)
 	{
 		padding-bottom: 30vh !important;
@@ -45,6 +64,10 @@ mat-grid-list{
 	{
 		padding-bottom: 20vh !important;
 	}
+	@media(max-height:668px){
+		margin-bottom: 10vh !important;
+	}
+	
 }
 
 .projects{
@@ -62,6 +85,11 @@ mat-grid-list{
 		background-color:#424240;
 		opacity:0.8;
 		color: white;
+	}
+	@media(max-width:423px){
+		p{
+			margin-top:0.2em;
+		}
 	}
 }
 #bakingImage{
