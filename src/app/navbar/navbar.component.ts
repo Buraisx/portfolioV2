@@ -16,3 +16,7 @@ export class NavbarComponent implements OnInit {
 
   }
 }
+// @Component({
+// 	selector: 'resume-dialog',
+// 	templateUrl:''
+// })
