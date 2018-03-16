@@ -22,6 +22,8 @@ import { FooterComponent } from './footer/footer.component';
 //Extra modules
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
+import { AbilityListComponent } from './ability-list/ability-list.component';
+import { StackListComponent } from './stack-list/stack-list.component';
 
 
 
@@ -49,7 +51,9 @@ const routes: Routes = [
     NavbarComponent,
     ProjectsComponent,
     FooterComponent,
-    ContactModalComponent
+    ContactModalComponent,
+    AbilityListComponent,
+    StackListComponent
   ],
   imports: [
     BrowserModule,

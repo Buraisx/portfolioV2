@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 
 @Component({
@@ -6,13 +6,6 @@ import { Component, OnInit } from '@angular/core';
 	templateUrl: './landing.component.html',
 	styleUrls: ['./landing.component.scss']
 })
-export class LandingComponent implements OnInit {
-
-	constructor() { }
-
-	// Fires when component is loaded
-	ngOnInit() {
-	}
-	
+export class LandingComponent{
 
 }
