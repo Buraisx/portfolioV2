@@ -1,7 +1,7 @@
 // @angular modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+// import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material 2
@@ -27,21 +27,21 @@ import { StackListComponent } from './stack-list/stack-list.component';
 
 
 
-// Routes variable
-const routes: Routes = [
-	{
-		path: '',
-		component: LandingComponent
-	},
-	{
-		path: 'about/:id',
-		component: AboutComponent
-	},
-  {
-    path: 'projects',
-    component: ProjectsComponent
-  }
-];
+// // Routes variable
+// const routes: Routes = [
+// 	{
+// 		path: '',
+// 		component: LandingComponent
+// 	},
+// 	{
+// 		path: 'about/:id',
+// 		component: AboutComponent
+// 	},
+//   {
+//     path: 'projects',
+//     component: ProjectsComponent
+//   }
+// ];
 
 @NgModule({
   declarations: [
@@ -68,9 +68,9 @@ const routes: Routes = [
     MatIconModule,
     MatDialogModule,
     ScrollToModule.forRoot(),
-    RouterModule.forRoot(
-    	routes
-    )
+    // RouterModule.forRoot(
+    // 	routes
+    // )
   ],
   exports: [
     MatButtonModule, 

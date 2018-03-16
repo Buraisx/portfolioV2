@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
       {title:'Web Applications',text: 'With a good understanding of MVC, I can create a fully functioning web application for you with all your desired features.'},
       {title:'Responsive Design', text: 'Optimized visuals and design for all the most common viewports.'},
       {title:'Prototyping', text: 'Using tools like Sketch, Balsamiq, and Photoshop,  I can create appropriate looking mockups and prototypes.'}];
-  constructor(private route: ActivatedRoute , private router: Router){ 
+  constructor(){ 
   }
 
   ngOnInit() {
