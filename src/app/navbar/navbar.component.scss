@@ -3,9 +3,16 @@ mat-toolbar{
 	position: absolute;
 	bottom: 0;
 	left:0;
-	background: rgba(255,0,0,0);
+	background: #ffffff;
 	z-index:99;
-	height:5vh;
+	padding:0px;
+}
+ul{
+	padding-left:0px;
+	li{
+		width:100%;
+		text-align:center;
+	}
 }
 #navControls{
 	display:flex;
@@ -13,20 +20,34 @@ mat-toolbar{
 	justify-content: center;
 	list-style: none;
 	li a{
+		position:relative;
 		font-size:1.25em;
 		font-family: 'Quicksand';
 		cursor:pointer;
 		text-decoration: none;
 		font-weight:bold;
-		padding:1em;
+		padding:0.5em 0.5em 0.5em 2em;
 		transition: all 0.3s ease-in-out;
 		border-radius:5px;
 		&:hover{
 		   -webkit-box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
 			box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.75);
-			
+		}
+		
 
+		@media(min-width: 832px){
+			margin: 0 2.5em;
+		}
+		@media(min-width: 1024px){
+			margin: 0 5em;
 		}
 	}
+	img{
+			position: absolute;
+			bottom:25%;
+			left:0.9em;
+			width:1em;
+		}
+
 }
