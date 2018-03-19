@@ -1,0 +1,48 @@
+#abilityList{
+	background-color: #EFEDED;
+	padding-top:5em;
+	#abilityContent{
+		// padding-top:5em;
+		width:60%;
+		margin:auto;
+		text-align:center;
+
+		@media(max-width:1024px){
+			width:80%;
+		}
+		@media(max-width:512px){
+			width:95%;
+		}
+		
+	}
+}
+p{
+	font-family: Roboto, Quicksand;
+	line-height: 2em;
+
+}
+.info{
+	position:absolute;
+	top:0;
+	h3{
+		font-size:1.5em;
+	}
+}
+
+
+#responsive, #browser,#edit{
+	border-radius:50%;
+	border:1px solid black;
+}
+img{
+	width: 50%;
+	height: auto;
+}
+.abilityTitle{
+	display:block;
+	position:relative;
+	margin-bottom:2em;
+	span{
+			font-weight: 900;
+	}
+}

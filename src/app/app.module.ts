@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material 2
 import {MatButtonModule, MatToolbarModule, MatGridListModule,MatIconModule,MatDialogModule} from '@angular/material';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 
 // Firebase 
 import { AngularFireModule } from 'angularfire2';
@@ -19,11 +21,12 @@ import { LandingComponent } from './landing/landing.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { AbilityListComponent } from './ability-list/ability-list.component';
+import { StackListComponent } from './stack-list/stack-list.component';
 //Extra modules
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
-import { AbilityListComponent } from './ability-list/ability-list.component';
-import { StackListComponent } from './stack-list/stack-list.component';
+
 
 
 
@@ -68,6 +71,7 @@ import { StackListComponent } from './stack-list/stack-list.component';
     MatIconModule,
     MatDialogModule,
     ScrollToModule.forRoot(),
+    BsDropdownModule.forRoot()
     // RouterModule.forRoot(
     // 	routes
     // )
