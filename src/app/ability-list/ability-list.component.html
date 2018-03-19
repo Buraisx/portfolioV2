@@ -1,25 +1,50 @@
-<div id="abilityList">
+<div id="abilityList" class="container-fluid">
+	<div class="row">
+		<h3 class="col-12">How I can help</h3>
+		<div class="col-12 subtext">
+			<p>Starting from the ground up, I'll help design, build, and maintain your app!</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-10 col-sm-2 " [ngClass]="{'offset-sm-3 offset-1': firstCol}" *ngFor="let ability of abilities; let firstCol=first" >
+			<div id="{{ability.image}}">
+				<img src="../../assets/images/{{ability.image}}.svg">
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h4>{{ability.title}}</h4>
+					<p>{{ability.text}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <div id="abilityList">
 	<div id="abilityContent">
 		<div class="abilityTitle">
 			<span>What I can do</span>
-		</div>
+		</div> -->
 <!-- 		<mat-grid-list cols="3" gutterSize="1.5em">
  -->			
 			<!-- <mat-grid-tile *ngFor="let icon of abilities" -->
 				<!-- [colspan]="1" id={{icon}}> -->
-			<div class="row">
-			<div *ngFor="let icon of abilities" class="col-sm-4">
-				<img src="../../assets/images/{{icon}}.svg">
-			</div>
-		</div>
-			<!-- </mat-grid-tile> -->
-			<mat-grid-tile *ngFor="let description of descriptions"
-				[colspan]="1" [rowspan]="2" class="abilityInfo">
-				<div class="info">
-					<h3>{{description.title}}</h3>
-					<p>{{description.text}}</p>
+		<!-- 	<div class="row">
+				<div *ngFor="let icon of abilities" class="col-sm-4">
+					<img src="../../assets/images/{{icon}}.svg">
 				</div>
-			</mat-grid-tile>
+			</div> -->
+			<!-- </mat-grid-tile> -->
+			<!-- <mat-grid-tile *ngFor="let description of descriptions"
+				[colspan]="1" [rowspan]="2" class="abilityInfo"> -->
+		<!-- 	<div class="row">
+				<div  *ngFor="let description of descriptions" class="col-sm-4 abilityInfo">
+					<div class="info">
+						<h3>{{description.title}}</h3>
+						<p>{{description.text}}</p>
+					</div>
+				</div>
+			</div> -->
+			<!-- </mat-grid-tile> -->
 		<!-- </mat-grid-list> -->
-	</div>
-</div>
+<!-- 	</div>
+</div> -->

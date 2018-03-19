@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ability-list.component.scss']
 })
 export class AbilityListComponent implements OnInit {
-  abilities = ['browser','responsive','edit'];
-  descriptions = [
-      {title:'Web Applications',text: 'With a good understanding of MVC, I can create a fully functioning web application for you with all your desired features.'},
-      {title:'Responsive Design', text: 'Optimized visuals and design for all the most common viewports.'},
-      {title:'Prototyping', text: 'Using tools like Sketch, Balsamiq, and Photoshop,  I can create appropriate looking mockups and prototypes.'}];
+  abilities = [
+  {image: 'edit', title:'Collaborate', text: "A very friendly person, open to new ideas, as well as approachable.  I'll try my best to integrate all your desired features and designs."},
+  {image: 'responsive', title:'Design', text: 'From wireframing to mockups and then to prototypes, I have the design phase pat down.'},
+  {image: 'browser', title:'Develop',text: 'From back-end logic to front-end design, I enjoy developing every aspect using frameworks like Ruby On Rails and React.'}];
   constructor() { }
 
   ngOnInit() {
