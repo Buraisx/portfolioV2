@@ -1,10 +1,8 @@
-<!-- STACK OF IMAGES -->
-<mat-grid-list cols="6" id="stack">
-	<mat-grid-tile [colspan]="6">
-		<span>I build with</span>
-	</mat-grid-tile>
-	<mat-grid-tile *ngFor="let icon of stack"
-		[colspan]="1">
-		<img src="../../assets/images/{{icon}}.svg">
-	</mat-grid-tile>
-</mat-grid-list>
+<div id="stack" class="container-fluid">
+	<h3>I build with</h3>
+	<div class="row">
+		<div class="col-2 col-md-1" *ngFor="let icon of stack; let firstIcon=first" [ngClass]="{'offset-md-3': firstIcon}">
+			<img src="../../assets/images/{{icon}}.svg" class="img-fluid">
+		</div>
+	</div>
+</div>

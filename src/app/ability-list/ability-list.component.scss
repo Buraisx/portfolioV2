@@ -11,7 +11,20 @@ p{
 	padding-top:5em;
 	text-align:center;
 }
-
+#abilityContent{
+	padding-bottom:2em;
+}
+// 1.5 offset
+@media (max-width: 990px) and (min-width:768px){
+	.offset-md-half{
+		margin-left:12.5%;
+	}
+}
+@media (max-width: 576px){
+	.offset-xs-2{
+		margin-left:16.666666%;
+	}
+}
 
 #responsive{
 	border-radius:50%;

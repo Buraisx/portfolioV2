@@ -1,17 +1,16 @@
 #footer{
+	background-color: #333A4E;
+	color: white;
+	text-align:center;
 	border-top:1px solid black;
-	width:50%;
-	margin:auto;
-	z-index:99;
-	@media(max-width:604px){
-		width:80%;
+	#footerContent{
+		opacity: 0.8;
 	}
 	span{
 		border:none;
 	}
 	div{
 		margin: 1em 1em;
-		text-align:center;
 	
 		img{
 			transition: all .3s ease-in-out;
@@ -22,9 +21,8 @@
 			}
 		}
 	}
-	#email{
+	#copy{
 		display:block;
-		text-align:center;
 	}
 }
 

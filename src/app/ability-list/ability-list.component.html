@@ -5,8 +5,9 @@
 			<p>Starting from the ground up, I'll help design, build, and maintain your app!</p>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-10 col-sm-2 " [ngClass]="{'offset-sm-3 offset-1': firstCol}" *ngFor="let ability of abilities; let firstCol=first" >
+
+	<div id="abilityContent" class="row">
+		<div class="offset-xs-2 col-8 col-md-3 col-sm-4 col-lg-2" [ngClass]="{'offset-md-half offset-lg-3 ': firstCol}" *ngFor="let ability of abilities; let firstCol=first" >
 			<div id="{{ability.image}}">
 				<img src="../../assets/images/{{ability.image}}.svg">
 			</div>
