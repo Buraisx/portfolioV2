@@ -1,34 +1,37 @@
-<div *ngIf="columns === 2"  id="projects">
-	<mat-grid-list cols="{{columns}}" gutterSize="1rem" rowHeight="2:1" id="projects_list" (window:resize)="onResize($event)" >
-		<!--  if block-->
-		
-			<mat-grid-tile id={{project.imageClass}} class="projects" *ngFor="let project of projectsObservable | async"
-			[colspan]="project.cols"
-			[rowspan]="project.rows">
-			<a class="projectInfo" href={{project.link}} target="_blank">
-					<p>{{project.description}}</p>
-					<p>Stack: {{project.stack}}</p>
-				</a>
-			</mat-grid-tile>
-		</mat-grid-list>
+<div id="projects" class="container-fluid">
+	<h3>My Work</h3>
 
+	<div *ngFor="let project of projectsObservable | async; let i = index" class="row">
+	
+			<div class="col-12">
+				<img src="../../assets/images/{{project.title}}.png" class="img-fluid">
+			</div>
+	
+		<!-- If counter is divisible by two -->
+			<div *ngIf="(i+1)%2 === 0" class="offset-2 col-8 offset-sm-2 col-sm-3 borderBottom">
+				<img src="../../assets/images/{{project.imageClass}}.png" class="img-fluid">
+			</div>
+			<div *ngIf="(i+1)%2 === 0"class="offset-2 col-8 offset-sm-0 col-sm-5 text-left borderBottom">
+				<p>{{project.description}}</p>
+				<p><b>Stack:</b> {{project.stack}}</p>
+				<a href="{{project.link}}" target="_blank"><button type="button" class="btn btn-outline-success">Visit Website</button></a>
+			</div>
+
+			<!-- ELSE -->
+			<div *ngIf="(i+1)%2 !== 0"class="offset-2 col-8 offset-sm-2 col-sm-5 text-left borderBottom">
+				<p>{{project.description}}</p>
+				<p><b>Stack:</b> {{project.stack}}</p>
+				<a href="{{project.link}}" target="_blank"><button type="button" class="btn btn-outline-success">Visit Website</button></a>
+			</div>
+
+			<div *ngIf="(i+1)%2 !== 0" class="offset-2 col-8 offset-sm-0 col-sm-3 borderBottom">
+				<img src="../../assets/images/{{project.imageClass}}.png" class="img-fluid">
+			</div>
+			
+	</div>
+	<div class="row">
+		<div class="col-12 subtext">
+			<p>More of my work can be viewed <a href="https://github.com/Buraisx" target="_blank" class="anchor">HERE!</a></p>
+		</div>
+	</div>
 </div>
-
-<!-- Elseblock -->
-<div *ngIf="columns !== 2" >
-	<mat-grid-list cols="{{columns}}" gutterSize="1rem" rowHeight="4:1" id="projects_list" (window:resize)="onResize($event)" >
-			<mat-grid-tile id={{project.imageClass}} class="projects" *ngFor="let project of projectsObservable | async"
-			[rowspan]="1" rowheight="100px">
-				<a class="projectInfo" href={{project.link}} target="_blank">
-					<p>{{project.description}}</p>
-					<p>Stack: {{project.stack}}</p>
-				</a>
-		</mat-grid-tile>
-	</mat-grid-list>
-</div>
-
-
-
-
-
-

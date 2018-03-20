@@ -1,122 +1,137 @@
-mat-grid-list{
-	width:60%;
-	margin:auto;
-	@media(min-width:1040px){
-		width:50%
-	}
-	@media(max-width: 967px){
-		width:70%;
-	}
-	@media(max-width:667px){
-		width:90%;
-	}
-}
+// mat-grid-list{
+// 	width:60%;
+// 	margin:auto;
+// 	@media(min-width:1040px){
+// 		width:50%
+// 	}
+// 	@media(max-width: 967px){
+// 		width:70%;
+// 	}
+// 	@media(max-width:667px){
+// 		width:90%;
+// 	}
+// }
 
-#projects_list{
-	@media(min-width:668px){
-		padding-bottom: 60vh !important;
-	}
-	@media(min-width:1345px){
-		padding-bottom: 70vh !important;
-	}
-	@media(min-width:1500px){
-		padding-bottom: 80vh !important;
-	}
-	@media(min-width:1920px){
-		padding-bottom: 100vh !important;
-	}
-	@media(max-width:667px){
-		padding-bottom: 70vh !important;
-	}
-	@media(max-width:567px){
-		padding-bottom: 67vh !important;
-	}
-	@media(max-width:500px){
-		padding-bottom: 50vh !important;
-	}
-	//this was where I realized i shouldve been using margin...
-	@media(max-height:768px){
-		margin-bottom: 15vh !important;
-	}
-	@media(max-height:667px){
-		margin-bottom: 20vh !important;
-	}
-	@media(max-height:568px){
-		margin-bottom: 30vh !important;
-	}
-	@media(max-height:515px){
-		margin-bottom: 40vh !important;
-	}
-	@media(max-height:436px){
-		margin-bottom: 60vh !important;
-	}
-	@media(max-height:400px){
-		margin-bottom: 80vh !important;
-		@media(max-width:746px){
-			margin-bottom: 450px !important;
-		}
-	}
+// #projects_list{
+// 	@media(min-width:668px){
+// 		padding-bottom: 60vh !important;
+// 	}
+// 	@media(min-width:1345px){
+// 		padding-bottom: 70vh !important;
+// 	}
+// 	@media(min-width:1500px){
+// 		padding-bottom: 80vh !important;
+// 	}
+// 	@media(min-width:1920px){
+// 		padding-bottom: 100vh !important;
+// 	}
+// 	@media(max-width:667px){
+// 		padding-bottom: 70vh !important;
+// 	}
+// 	@media(max-width:567px){
+// 		padding-bottom: 67vh !important;
+// 	}
+// 	@media(max-width:500px){
+// 		padding-bottom: 50vh !important;
+// 	}
+// 	//this was where I realized i shouldve been using margin...
+// 	@media(max-height:768px){
+// 		margin-bottom: 15vh !important;
+// 	}
+// 	@media(max-height:667px){
+// 		margin-bottom: 20vh !important;
+// 	}
+// 	@media(max-height:568px){
+// 		margin-bottom: 30vh !important;
+// 	}
+// 	@media(max-height:515px){
+// 		margin-bottom: 40vh !important;
+// 	}
+// 	@media(max-height:436px){
+// 		margin-bottom: 60vh !important;
+// 	}
+// 	@media(max-height:400px){
+// 		margin-bottom: 80vh !important;
+// 		@media(max-width:746px){
+// 			margin-bottom: 450px !important;
+// 		}
+// 	}
 	
 
 
-}
+// }
 
-#stack{
-	@media(max-width:1680px)
-	{
-		padding-bottom: 40vh !important;
-	}
-	@media(max-width:1440px)
-	{
-		padding-bottom: 40vh !important;
-	}
-	@media(max-width:664px)
-	{
-		padding-bottom: 30vh !important;
-	}
-	@media(max-width:470px)
-	{
-		padding-bottom: 20vh !important;
-	}
-	@media(max-height:668px){
-		margin-bottom: 10vh !important;
-	}
-	@media(max-height:419px){
-		margin-bottom: 30vh !important;
-	}
+// #stack{
+// 	@media(max-width:1680px)
+// 	{
+// 		padding-bottom: 40vh !important;
+// 	}
+// 	@media(max-width:1440px)
+// 	{
+// 		padding-bottom: 40vh !important;
+// 	}
+// 	@media(max-width:664px)
+// 	{
+// 		padding-bottom: 30vh !important;
+// 	}
+// 	@media(max-width:470px)
+// 	{
+// 		padding-bottom: 20vh !important;
+// 	}
+// 	@media(max-height:668px){
+// 		margin-bottom: 10vh !important;
+// 	}
+// 	@media(max-height:419px){
+// 		margin-bottom: 30vh !important;
+// 	}
 	
-}
+// }
 
-.projects{
-	border: 1px solid #6d6d65;
-}
+// .projects{
+// 	border: 1px solid #6d6d65;
+// }
 
-.projectInfo{
-	width:100%;
-	height:100%;
-	opacity:0;
-	transition: all .1s ease-in-out;
-	text-decoration:none;
-	padding: 1em 1em;
-	&:hover{
-		background-color:#424240;
-		opacity:0.8;
-		color: white;
+// .projectInfo{
+// 	width:100%;
+// 	height:100%;
+// 	opacity:0;
+// 	transition: all .1s ease-in-out;
+// 	text-decoration:none;
+// 	padding: 1em 1em;
+// 	&:hover{
+// 		background-color:#424240;
+// 		opacity:0.8;
+// 		color: white;
+// 	}
+// 	@media(max-width:423px){
+// 		p{
+// 			margin-top:0.2em;
+// 		}
+// 	}
+// }
+// #bakingImage{
+// 	background: #F8F9FA url("../../assets/images/mary-j-logo.png") no-repeat center;
+// }
+// #biteImage{
+// 	background: #254073 url("../../assets/images/bitelist-02-transparent2.png") no-repeat center;
+// }
+// img{
+// 	width:100%;
+// 	height:100%;
+// }
+// /////////////////////////////////////////////////
+#projects{
+	padding: 2em 0;
+	text-align:center;
+	background-color: #FBE8A6;
+	.borderBottom{
+		padding: 2em 0;
+		border-bottom: 1px solid #7f7f7f;
 	}
-	@media(max-width:423px){
-		p{
-			margin-top:0.2em;
-		}
+	.row{
+		margin-top:5em;
+	}
+	.anchor{
+		color:blue;
 	}
 }
-#bakingImage{
-	background: #F8F9FA url("../../assets/images/mary-j-logo.png") no-repeat center;
-}
-#biteImage{
-	background: #254073 url("../../assets/images/bitelist-02-transparent2.png") no-repeat center;
-}
-img{
-	width:100%;
-	height:100%;
-}
-	

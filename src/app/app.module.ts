@@ -5,8 +5,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material 2
-import {MatButtonModule, MatToolbarModule, MatGridListModule,MatIconModule,MatDialogModule} from '@angular/material';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import {MatToolbarModule} from '@angular/material';
 
 
 // Firebase 
@@ -28,24 +27,6 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
 
 
-
-
-// // Routes variable
-// const routes: Routes = [
-// 	{
-// 		path: '',
-// 		component: LandingComponent
-// 	},
-// 	{
-// 		path: 'about/:id',
-// 		component: AboutComponent
-// 	},
-//   {
-//     path: 'projects',
-//     component: ProjectsComponent
-//   }
-// ];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,19 +46,13 @@ import { ContactModalComponent } from './contact-modal/contact-modal.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    MatButtonModule, 
     MatToolbarModule,
-    MatGridListModule,
-    MatIconModule,
-    MatDialogModule,
     ScrollToModule.forRoot(),
-    BsDropdownModule.forRoot()
     // RouterModule.forRoot(
     // 	routes
     // )
   ],
   exports: [
-    MatButtonModule, 
     MatToolbarModule
   ],
   bootstrap: [AppComponent]
