@@ -1,7 +1,7 @@
 // /* You can add global styles to this file, and also import other style files */
-@import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto');
+html, body { overflow-x: hidden; }
 body{
 	margin:0px;
 	font-family:'Quicksand';
@@ -18,4 +18,6 @@ p{
 	line-height: 2em;
 	opacity:0.8;
 }
-html, body { overflow-x: hidden; }
+h2,h3,h4{
+	font-family:'Quicksand';	
+}
