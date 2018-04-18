@@ -10,6 +10,23 @@
 
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+  	<style>
+  		#loading{
+  			width:100%;
+			position:fixed;
+			transition: all 1s ease;
+			padding-top:45vh; 
+			text-align:center;
+		}
+		app-root:not(:empty){
+			opacity:1;
+			transition: all 1s ease;
+		}
+  	</style>
+  	<div id="loading">
+  		<h1>Loading...</h1>
+  	</div>
+  </app-root>
 </body>
 </html>
