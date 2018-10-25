@@ -5,15 +5,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material 2
-import {MatToolbarModule} from '@angular/material';
-
-
-// Firebase 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { MatToolbarModule } from '@angular/material';
+// Firebase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from './../environments/environment';
-//App components
+// App components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
@@ -22,9 +21,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { AbilityListComponent } from './ability-list/ability-list.component';
 import { StackListComponent } from './stack-list/stack-list.component';
-//Extra modules
+// Extra modules
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { ContactModalComponent } from './contact-modal/contact-modal.component';
 
 
 @NgModule({
@@ -35,7 +33,6 @@ import { ContactModalComponent } from './contact-modal/contact-modal.component';
     NavbarComponent,
     ProjectsComponent,
     FooterComponent,
-    ContactModalComponent,
     AbilityListComponent,
     StackListComponent
   ],
@@ -46,11 +43,9 @@ import { ContactModalComponent } from './contact-modal/contact-modal.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    AngularFirestoreModule,
     MatToolbarModule,
     ScrollToModule.forRoot(),
-    // RouterModule.forRoot(
-    // 	routes
-    // )
   ],
   exports: [
     MatToolbarModule

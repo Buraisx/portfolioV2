@@ -1,27 +1,22 @@
-#footer{
+footer{
 	background-color: #333A4E;
 	color: white;
 	text-align:center;
 	border-top:1px solid black;
 	#footerContent{
-		opacity: 0.8;
+    opacity: 0.8;
+    margin: 1rem 1rem;
 	}
-	span{
-		border:none;
-	}
-	div{
-		margin: 1em 1em;
-	
-		img{
-			transition: all .3s ease-in-out;
-			margin: 0 0.5em;
-			width:3em;
-			&:hover{
-				filter: opacity(40%);
-			}
-		}
-	}
-	#copy{
+	img{
+    transition: all .3s ease-in-out;
+    margin: 0 0.5em;
+    width:3em;
+    &:hover{
+      filter: opacity(40%);
+    }
+  }
+	#copyright{
+    border:none;
 		display:block;
 	}
 }

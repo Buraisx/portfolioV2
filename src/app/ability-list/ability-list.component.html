@@ -1,13 +1,17 @@
-<div id="abilityList" class="container-fluid">
-	<div class="row">
+<section id="abilityList" class="container-fluid">
+	<header class="row">
 		<h3 class="col-12">How I can help</h3>
 		<div class="col-12 subtext">
 			<p>Starting from the ground up, I'll help design, build, and maintain your app!</p>
 		</div>
-	</div>
+  </header>
 
-	<div id="abilityContent" class="row">
-		<div class="offset-xs-2 col-8 col-md-3 col-sm-4 col-lg-2" [ngClass]="{'offset-md-half offset-lg-3 ': firstCol}" *ngFor="let ability of abilities; let firstCol=first" >
+	<main id="abilityContent" class="row">
+    <div 
+      class="offset-xs-2 col-8 col-md-3 col-sm-4 col-lg-2"
+      [ngClass]="{'offset-md-half offset-lg-3 ': firstCol}"
+      *ngFor="let ability of abilities; let firstCol=first"
+    >
 			<div id="{{ability.image}}">
 				<img src="../../assets/images/{{ability.image}}.svg">
 			</div>
@@ -18,5 +22,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+  </main>
+</section>

@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stack-list.component.scss']
 })
 export class StackListComponent implements OnInit {
-	stack = ['rails','react','angular','node','bootstrap','postgres'];
+  stack = [
+    'rails',
+    'react',
+    'angular',
+    'node',
+    'bootstrap',
+    'postgres'
+  ];
+
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }

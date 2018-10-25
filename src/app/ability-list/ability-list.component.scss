@@ -1,13 +1,10 @@
-h2,h3,h4{
-	font-family:'Quicksand';	
-}
 p{
 	font-family: Roboto, Quicksand;
-	line-height: 2em;
+	line-height: 2rem;
 	opacity:0.7;
 }
 .subtext{
-	margin-bottom:2em;
+	margin-bottom:2rem;
 }
 #abilityList{
 	background-color: #EFEDED;
@@ -15,7 +12,7 @@ p{
 	text-align:center;
 }
 #abilityContent{
-	padding-bottom:2em;
+	padding-bottom:2rem;
 }
 // 1.5 offset
 @media (max-width: 990px) and (min-width:768px){
@@ -44,16 +41,16 @@ p{
 
  img{
  	// height: auto;
-	margin:2em;
+	margin: 3rem;
 	@media(max-width:576px){
-		margin:2em 0em;
-		width:50%;
+		margin: 2rem 0;
+		width: 50%;
 	}
 }
 .abilityTitle{
-	display:block;
-	position:relative;
-	margin-bottom:2em;
+	display: block;
+	position: relative;
+	margin-bottom: 3rem;
 	span{
 			font-weight: 900;
 	}

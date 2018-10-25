@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireDatabase } from 'angularfire2/database'; 
+import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -8,16 +8,14 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-	projectsObservable: Observable<any[]>;
-  	constructor(private db: AngularFireDatabase) { }
+  projectsObservable: Observable<any[]>;
+  constructor(private db: AngularFirestore) { }
 
-	ngOnInit() {
-		this.projectsObservable = this.getProjects('/projects');
-	}
+  ngOnInit() {
+    this.projectsObservable = this.getProjects('/projects');
+  }
 
-	getProjects(listPath): Observable<any[]>{
-		return this.db.list(listPath).valueChanges();
-	}
-
-
+  getProjects(listPath): Observable<any[]> {
+    return this.db.collection(listPath).valueChanges();
+  }
 }
