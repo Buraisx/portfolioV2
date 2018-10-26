@@ -7,10 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Material 2
 import { MatToolbarModule } from '@angular/material';
 // Firebase
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from './../environments/environment';
 // App components
 import { AppComponent } from './app.component';
@@ -43,7 +42,6 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    AngularFirestoreModule,
     MatToolbarModule,
     ScrollToModule.forRoot(),
   ],

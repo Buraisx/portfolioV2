@@ -8,20 +8,41 @@
 			</div>
 	
 		<!-- If counter is divisible by two -->
-			<div *ngIf="(i+1)%2 === 0" class="offset-2 col-8 offset-sm-2 col-sm-3 borderBottom imageBorder">
+      <div
+        *ngIf="(i+1)%2 === 0"
+        class="offset-2 col-8 offset-sm-2 col-sm-3 borderBottom imageBorder"
+      >
 				<img src="../../assets/images/{{project.imageClass}}.png" class="img-fluid">
 			</div>
-			<div *ngIf="(i+1)%2 === 0"class="offset-2 col-8 offset-sm-0 col-sm-5 text-left borderBottom">
+      <div
+        *ngIf="(i+1)%2 === 0"
+        class="offset-2 col-8 offset-sm-0 col-sm-5 text-left borderBottom"
+      >
 				<p>{{project.description}}</p>
 				<p><b>Stack:</b> {{project.stack}}</p>
-				<a href="{{project.link}}" target="_blank"><button type="button" class="btn btn-outline-success">Visit Website</button></a>
+        <a
+          *ngIf="project.link !== ''"
+          href="{{project.link}}"
+          target="_blank"
+        >
+          <button type="button" class="btn btn-outline-success">Visit Website</button>
+        </a>
 			</div>
 
 			<!-- ELSE -->
-			<div *ngIf="(i+1)%2 !== 0"class="offset-2 col-8 offset-sm-2 col-sm-5 text-left borderBottom imageBorder">
+      <div
+        *ngIf="(i+1)%2 !== 0"
+        class="offset-2 col-8 offset-sm-2 col-sm-5 text-left borderBottom imageBorder"
+      >
 				<p>{{project.description}}</p>
 				<p><b>Stack:</b> {{project.stack}}</p>
-				<a href="{{project.link}}" target="_blank"><button type="button" class="btn btn-outline-success">Visit Website</button></a>
+        <a
+          *ngIf="project.link !== ''"
+          href="{{project.link}}"
+          target="_blank"
+        >
+          <button type="button" class="btn btn-outline-success">Visit Website</button>
+        </a>
 			</div>
 
 			<div *ngIf="(i+1)%2 !== 0" class="offset-2 col-8 offset-sm-0 col-sm-3 borderBottom ">
